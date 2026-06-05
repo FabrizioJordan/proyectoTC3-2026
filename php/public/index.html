@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartasss</title>
+</head>
+<body>
+
+    <h1>Creador de Cartas</h1>
+
+    <h2>Ingresa una carta</h2>
+    <form action="procesar.php" method="POST">
+
+        <label for="palo">Palo:</label>
+        <select name="palo" id="palo">
+            <option value="0">Oro</option>
+            <option value="1">Copa</option>
+            <option value="2">Espada</option>
+            <option value="3">Basto</option>
+        </select>
+
+        <br><br>
+
+        <label for="numero">Número (1-12):</label>
+        <input type="number" name="numero" id="numero" min="1" max="12" required>
+
+        <br><br>
+
+        <input type="submit" value="crear carta">
+
+    </form>
+
+</body>
+</html>
