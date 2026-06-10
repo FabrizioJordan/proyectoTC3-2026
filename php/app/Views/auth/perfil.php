@@ -8,33 +8,39 @@
 </head>
 <body class="bg-[#fff1dc] font-[Inter]">
     <!-- Barra de navegación -->
-    <nav class="bg-[#8f511c4d] py-6 px-6 text-black tracking-wide border-b-3 border-[#8b3f0012]">
-        <div class="flex flex-row gap-1 sm:gap-4 items-center justify-between">
-            <a class="hover:text-[#9f5910] transition-colors duration-300 font-bold text-base sm:text-lg md:text-xl" href="#">La Guerra Española</a>
-            <div class="[&_a]:hover:bg-[#1f100033] [&_a]:px-2 [&_a]:py-2 [&_a]:md:px-4 [&_a]:md:py-2 [&_a]:rounded-lg [&_a]:transition-colors [&_a]:duration-200 text-black" id="">
+    <header class="bg-[#8f511c4d] px-6 py-6 border-[#8b3f0012] border-b-3 text-black tracking-wide">
+        <div class="flex flex-row justify-between items-center gap-1 sm:gap-4">
+            <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="#">La Guerra Española</a>
+            <div class="[&_a]:hover:bg-[#1f100033] [&_a]:md:px-4 [&_a]:px-2 [&_a]:md:py-2 [&_a]:py-2 [&_a]:rounded-lg text-black [&_a]:transition-colors [&_a]:duration-200" id="">
                 <ul class="flex flex-row justify-center items-center gap-1 sm:gap-4 md:gap-8">
-                    <li class="">
-                        <a class="flex flex-row gap-1 sm:gap-2 items-center" href="/dashboard">
-                            <img class="sm:w-6 sm:h-6 w-5 h-5" src="/assets/icons/house.svg" alt="Icono de una casa para ir al inicio">
-                            <span class="text-sm sm:text-base font-medium">Inicio</span>
-                        </a>
-                    </li>
                     <li class="hidden">
-                        <a class="flex flex-row gap-1 sm:gap-2 items-center" href="/perfil">
-                            <img class="sm:w-6 sm:h-6 w-5 h-5" src="/assets/icons/profile.svg" alt="Perfil Icon">
-                            <span class="text-sm sm:text-base font-medium">Perfil</span>
+                        <a class="flex flex-row items-center gap-1 sm:gap-2" href="/dashboard">
+                            <img class="w-5 sm:w-6 h-5 sm:h-6" src="/assets/icons/house.svg" alt="Icono de una casa para ir al inicio">
+                            <span class="font-medium text-sm sm:text-base">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="" hidden>
+                        <a class="flex flex-row items-center gap-1 sm:gap-2" href="/perfil">
+                            <img class="w-5 sm:w-6 h-5 sm:h-6" src="/assets/icons/profile.svg" alt="Perfil Icon">
+                            <span class="font-medium text-sm sm:text-base">Perfil</span>
                         </a>
                     </li>
                     <li class="">
-                        <a class="flex flex-row gap-1 sm:gap-2 items-center" href="/logout">
-                            <img class="sm:w-6 sm:h-6 w-5 h-5" src="/assets/icons/sign-out.svg" alt="Icono de salida">
-                            <span class="text-sm sm:text-base font-medium">Salir</span>
+                        <a class="flex flex-row items-center gap-1 sm:gap-2" href="/tablero">
+                            <img class="w-4 sm:w-5 h-4 sm:h-5" src="/assets/icons/card-casino.svg" alt="Icono de tablero">
+                            <span class="font-medium text-sm sm:text-base">Tablero</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="flex flex-row items-center gap-1 sm:gap-2" href="/logout">
+                            <img class="w-5 sm:w-6 h-5 sm:h-6" src="/assets/icons/sign-out.svg" alt="Icono de salida">
+                            <span class="font-medium text-sm sm:text-base">Salir</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Contenido principal -->
     <main class="text-black flex flex-row items-start justify-between px-14 md:px-36 my-8"> 

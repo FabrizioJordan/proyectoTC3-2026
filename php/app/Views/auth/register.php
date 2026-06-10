@@ -5,20 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        input[type="password"]::-ms-reveal,
-        input[type="password"]::-ms-clear {
-            display: none;
-        }
-        input[type="password"]::-webkit-contacts-auto-fill-button,
-        input[type="password"]::-webkit-credentials-auto-fill-button {
-            display: none;
-        }
-    </style>
 </head>
-<body class="bg-[#fff1dc] min-h-screen flex items-center justify-center py-6">
+<body class="bg-[#fff1dc] min-h-screen flex items-center justify-center">
 
-    <div class="bg-white shadow-lg min-w-full sm:min-w-auto min-h-[100vh] sm:min-h-auto py-6 px-16 sm:px-8 sm:py-6 md:px-10 md:py-6 border-0 sm:border-1 sm:border-[#ad5c19] rounded-none sm:rounded-3xl">
+    <div class="bg-white shadow-lg min-w-full sm:min-w-auto min-h-[100vh] sm:min-h-auto py-6 px-16 sm:px-8 sm:py-6 md:px-10 md:py-6 border-0 sm:border-1 sm:border-[#ad5c19] rounded-none sm:rounded-3xl py-6">
 
         <div class="text-center pb-4">
             <h1 class="font-semibold text-4xl text-[#ad5c19] pb-2">Crear Cuenta</h1>

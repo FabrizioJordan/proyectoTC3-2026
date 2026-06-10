@@ -8,7 +8,7 @@
 </head>
 <body class="bg-[#fff1dc] font-[Inter]">
     <!-- Barra de navegación -->
-    <nav class="bg-[#8f511c4d] px-6 py-6 border-[#8b3f0012] border-b-3 text-black tracking-wide">
+    <header class="bg-[#8f511c4d] px-6 py-6 border-[#8b3f0012] border-b-3 text-black tracking-wide">
         <div class="flex flex-row justify-between items-center gap-1 sm:gap-4">
             <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="#">La Guerra Española</a>
             <div class="[&_a]:hover:bg-[#1f100033] [&_a]:md:px-4 [&_a]:px-2 [&_a]:md:py-2 [&_a]:py-2 [&_a]:rounded-lg text-black [&_a]:transition-colors [&_a]:duration-200" id="">
@@ -26,6 +26,12 @@
                         </a>
                     </li>
                     <li class="">
+                        <a class="flex flex-row items-center gap-1 sm:gap-2" href="/tablero">
+                            <img class="w-4 sm:w-5 h-4 sm:h-5" src="/assets/icons/card-casino.svg" alt="Icono de tablero">
+                            <span class="font-medium text-sm sm:text-base">Tablero</span>
+                        </a>
+                    </li>
+                    <li class="">
                         <a class="flex flex-row items-center gap-1 sm:gap-2" href="/logout">
                             <img class="w-5 sm:w-6 h-5 sm:h-6" src="/assets/icons/sign-out.svg" alt="Icono de salida">
                             <span class="font-medium text-sm sm:text-base">Salir</span>
@@ -34,14 +40,16 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Contenido principal -->
-    <section class="flex flex-col justify-center items-center gap-6 px-4 pt-6 pb-16 h-full">
-        <header class="flex flex-col gap-4 py-4">
+    <main class="flex flex-col justify-center items-center gap-4 sm:gap-12 px-4 pt-0 pb-12 h-full">
+        <header class="flex flex-col gap-4 pt-4 sm:py-4 sm:pt-4">
+            
+            <p class="text-xs text-gray-500 mt-2">Versión 0.2.0 | Desarrollado con poca pasión</p>
 
             <!-- Carta con efecto de volteo - Frente emoji, reverso imagen licenciada -->
-            <section class="flex flex-row flex-wrap items-center gap-4" >
+            <section class="flex flex-row flex-wrap items-center gap-4" hidden>
 
                 <!-- Método 2: Click para voltear con JavaScript -->
                 <div class="w-24 sm:w-36 h-36 sm:h-52" style="perspective: 1000px;">
@@ -78,6 +86,12 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="w-36 h-52 bg-[#ad5c19] rounded-lg shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+                    <div class="flex items-center justify-center" >
+                        <span class="text-[#fff1dc] font-normal text-9xl" >🃟</span>
+                    </div>
+                </div>
             </section>
 
             <style>
@@ -104,30 +118,42 @@
                     transform: rotateY(180deg);
                 }
             </style>
-            <section class="flex justify-center items-center py-8">
-            <div class="relative w-48 h-72">
-                <div class="top-0 left-0 absolute bg-white shadow-md border-2 border-gray-300 rounded-lg w-48 h-72"></div>
-                <div class="top-2 left-4 absolute bg-white shadow-md border-2 border-gray-300 rounded-lg w-48 h-72"></div>
-                <div class="top-4 left-8 absolute bg-white shadow-md border-2 border-gray-300 rounded-lg w-48 h-72 rota"></div>
-            </div>
-        </section>
+
+            <section class="flex justify-center items-center py-2 pt-6">
+                <div class="relative w-42 h-62 flex gap-4">
+                    <div class="z-10 top-8 sm:top-8 right-22 sm:right-18 absolute -rotate-12 w-32 h-48 sm:w-42 sm:h-62 shadow-md rounded-lg shadow-lg bg-[#ad5c19] flex items-center justify-center hover:scale-105 transition-transform duration-400">
+                        <div class="flex items-center justify-center" >
+                            <span class="text-[#fff1dc] font-normal text-8xl sm:text-9xl" >🃟</span>
+                        </div>
+                    </div>
+                    <div class="z-30 top-2 left-8 sm:top-4 sm:left-0 absolute -rotate-2 w-32 h-48 sm:w-42 sm:h-62 shadow-md rounded-lg hover:scale-105 transition-transform duration-400">
+                        <img src="/assets/images/cartas/c_e_10.png" alt="Diez de Espadas" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="z-20 bottom-16 sm:bottom-2 left-32 sm:left-18 absolute rotate-4 w-32 h-48 sm:w-42 sm:h-62 shadow-md rounded-lg shadow-lg  bg-[#ad5c19] flex items-center justify-center hover:scale-105 transition-transform duration-400">
+                        <div class="flex items-center justify-center" >
+                            <span class="text-[#fff1dc] font-normal text-8xl sm:text-9xl" >🃟</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </header>
         <article class="flex flex-col gap-4">
-            <div>
-                <h1 class="max-w-sm max-w-md md:max-w-lg font-extrabold text-2xl sm:text-3xl md:text-5xl text-center">Bienvenidos a la Guerra Española</h1>
-            </div>
-            <div class="mb-4">
-                <p class="font-medium text-sm sm:text-base md:text-lg text-center">Un juego de cartas a lo tradicional</p>
+            <div class="max-w-sm md:max-w-md md:max-w-lg mx-auto flex flex-col gap-4">
+                <h1 class=" font-extrabold text-2xl sm:text-3xl md:text-5xl text-center">Bienvenidos a la Guerra Española</h1>
+                <p class="text-sm sm:text-base md:text-lg text-center text-gray-700">
+                    Descubrí este clásico juego de cartas español. Competí contra otros jugadores, mejorá tus habilidades y dominá el tablero. ¿Tenés lo necesario para ser el campeón?
+                </p>
             </div>
         </article>
         <footer class="flex flex-row justify-center items-center gap-4 [&>A]:px-10 [&>A]:sm:px-16 [&>A]:py-2 [&>A]:rounded-full [&>A]:font-semibold [&>A]:sm:font-bold [&>A]:text-base [&>A]:sm:text-lg [&>A]:tracking-wide">
             <a href="juego/tablero.php" class="bg-[#ad5c19] hover:bg-[#c56a1f] shadow-[8px_6px_8px_-2px_rgba(0,_0,_0,_0.1)] border-2 border-transparent hover:border-[#6b3000] text-white transition-colors duration-300">Jugar</a>
             <a href="/estadisticas" class="bg-[#fff1dc] hover:bg-[#f1dcbb] shadow-[8px_6px_8px_-2px_rgba(0,_0,_0,_0.1)] border-[#8b3f0059] border-1 text-black transition-colors duration-300">Ver Estadísticas</a>
         </footer>
-    </section>
+    </main>
 
-    <nav class="bg-linear-to-t from-[#d9b596] via-[#fff1dc] to-[#fff1dc] px-8 py-6 border-[#d9b596] border-t-1 font-[Inter] text-[#323232] text-center tracking-wide">
-        <p>Un juego de cartas a lo tradicional</p>
-    </nav>
+    <footer class="bg-linear-to-t from-[#d9b596] via-[#fff1dc] to-[#fff1dc] px-8 py-6 border-[#d9b596] border-t-1 font-[Inter] text-[#323232] text-center tracking-wide">
+        <p class="font-semibold mb-2">Un juego de cartas a lo tradicional</p>
+        <p class="text-sm text-gray-600">2026 La Guerra Española - Casi ningún derecho reservado</p>
+    </footer>
 </body>
 </html>

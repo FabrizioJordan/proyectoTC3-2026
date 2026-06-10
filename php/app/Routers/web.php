@@ -11,5 +11,7 @@ $router->get('/logout',  [AuthController::class, 'logout']);
 $router->get('/dashboard', [AuthController::class, 'dashboard']);
 $router->get('/perfil', [AuthController::class, 'perfil']);
 $router->get('/estadisticas', [AuthController::class, 'estadisticas']);
+$router->get('/tablero', [AuthController::class, 'tablero']);
+
 
 

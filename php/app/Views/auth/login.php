@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        input[type="password"]::-ms-reveal,
-        input[type="password"]::-ms-clear {
-            display: none;
-        }
-        input[type="password"]::-webkit-contacts-auto-fill-button,
-        input[type="password"]::-webkit-credentials-auto-fill-button {
-            display: none;
-        }
-    </style>
 </head>
 <body class="bg-[#fff1dc] min-h-screen flex items-center justify-center">
 

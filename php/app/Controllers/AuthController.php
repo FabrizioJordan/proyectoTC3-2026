@@ -100,6 +100,12 @@ public function estadisticas(): void
     require_once __DIR__ . '/../Views/auth/estadisticas.php';
 }
 
+public function tablero(): void
+{
+    require_once __DIR__ . '/../Views/auth/tablero.php';
+}
+
+
 
 
 
