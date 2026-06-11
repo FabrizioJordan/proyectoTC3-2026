@@ -10,10 +10,10 @@
     <!-- Barra de navegación -->
     <header class="bg-[#8f511c4d] px-6 py-6 border-[#8b3f0012] border-b-3 text-black tracking-wide">
         <div class="flex flex-row justify-between items-center gap-1 sm:gap-4">
-            <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="#">La Guerra Española</a>
+            <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="/dashboard">La Guerra Española</a>
             <div class="[&_a]:hover:bg-[#1f100033] [&_a]:md:px-4 [&_a]:px-2 [&_a]:md:py-2 [&_a]:py-2 [&_a]:rounded-lg text-black [&_a]:transition-colors [&_a]:duration-200" id="">
                 <ul class="flex flex-row justify-center items-center gap-1 sm:gap-4 md:gap-8">
-                    <li class="hidden">
+                    <li class="">
                         <a class="flex flex-row items-center gap-1 sm:gap-2" href="/dashboard">
                             <img class="w-5 sm:w-6 h-5 sm:h-6" src="/assets/icons/house.svg" alt="Icono de una casa para ir al inicio">
                             <span class="font-medium text-sm sm:text-base">Inicio</span>
@@ -60,9 +60,15 @@
                     </header>
                 
                     <div class="flex flex-col gap-6 md:gap-8 [&_button]:px-10 [&_button]:py-2 [&_button]:rounded-full [&_button]:bg-[#ad5c19] [&_button]:text-white [&_button]:hover:bg-[#c56a1f] [&_button]:transition-colors [&_button]:duration-300 [&_button]:tracking-wide [&_button]:text-sm [&_button]:md:text-base [&_button]:font-semibold [&_button]:md:font-bold [&_button]:border-2 [&_button]:border-transparent [&_button]:hover:border-[#6b3000] [&_button]:shadow-[8px_6px_8px_-2px_rgba(0,_0,_0,_0.1)]">
-                            <button class="">Cambiar Foto de Perfil</button>
-                            <button class="">Cambiar Nombre Público</button>
-                            <button class="">Poner Cartas Personalizadas</button>
+                            <div class="cursor-not-allowed w-fit">
+                                <button class="cursor-not-allowed pointer-events-none select-none">Cambiar Foto de Perfil</button>
+                            </div>
+                            <div class="cursor-not-allowed w-fit">
+                                <button class=" pointer-events-none select-none">Cambiar Nombre Público</button>
+                            </div>
+                            <div class="cursor-not-allowed w-fit">
+                                <button class=" pointer-events-none select-none">Poner Cartas Personalizadas</button>
+                            </div>
                     </div>
 
                     <footer class="flex flex-col gap-4">

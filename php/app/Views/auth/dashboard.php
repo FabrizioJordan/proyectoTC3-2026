@@ -10,7 +10,7 @@
     <!-- Barra de navegación -->
     <header class="bg-[#8f511c4d] px-6 py-6 border-[#8b3f0012] border-b-3 text-black tracking-wide">
         <div class="flex flex-row justify-between items-center gap-1 sm:gap-4">
-            <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="#">La Guerra Española</a>
+            <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="/dashboard">La Guerra Española</a>
             <div class="[&_a]:hover:bg-[#1f100033] [&_a]:md:px-4 [&_a]:px-2 [&_a]:md:py-2 [&_a]:py-2 [&_a]:rounded-lg text-black [&_a]:transition-colors [&_a]:duration-200" id="">
                 <ul class="flex flex-row justify-center items-center gap-1 sm:gap-4 md:gap-8">
                     <li class="hidden">
@@ -45,8 +45,8 @@
     <!-- Contenido principal -->
     <main class="flex flex-col justify-center items-center gap-4 sm:gap-12 px-4 pt-0 pb-12 h-full">
         <header class="flex flex-col gap-4 pt-4 sm:py-4 sm:pt-4">
-            
-            <p class="text-xs text-gray-500 mt-2">Versión 0.2.0 | Desarrollado con poca pasión</p>
+
+            <p class="text-xs text-gray-500 mt-2">Versión 0.3.0 | Desarrollado con poca pasión</p>
 
             <!-- Carta con efecto de volteo - Frente emoji, reverso imagen licenciada -->
             <section class="flex flex-row flex-wrap items-center gap-4" hidden>

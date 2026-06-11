@@ -7,10 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#fff1dc] font-[Inter] min-h-screen flex flex-col">
+    
+
     <!-- Barra de navegación -->
     <header class="bg-[#8f511c4d] px-6 py-6 border-[#8b3f0012] border-b-3 text-black tracking-wide">
         <div class="flex flex-row justify-between items-center gap-1 sm:gap-4">
-            <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="#">La Guerra Española</a>
+            <a class="font-bold hover:text-[#9f5910] text-base sm:text-lg md:text-xl transition-colors duration-300" href="/dashboard">La Guerra Española</a>
             <div class="[&_a]:hover:bg-[#1f100033] [&_a]:md:px-4 [&_a]:px-2 [&_a]:md:py-2 [&_a]:py-2 [&_a]:rounded-lg text-black [&_a]:transition-colors [&_a]:duration-200" id="">
                 <ul class="flex flex-row justify-center items-center gap-1 sm:gap-4 md:gap-8">
                     <li class="">
@@ -43,30 +45,40 @@
     </header>
 
     <!-- Tablero de juego -->
-    <main class="flex flex-col px-12 py-12 gap-6">
+    <main class="flex flex-col px-12 pt-12 pb-4 gap-4 sm:gap-10">
 
-        <section class="flex flex-row gap-8">
+        <section class="flex flex-col md:flex-row gap-8">
+
+
             <!-- Área del oponente -->
-            <article class="bg-[#d9b59633] rounded-xl py-2 px-12 border-2 border-[#ad5c19] flex flex-col gap-4 justify-center items-center">
-                <div class="flex flex-col gap-2 justify-between items-center mb-3">
+            <article class="bg-[#d9b59633] rounded-xl py-6 sm:py-2 px-12 border-2 border-[#ad5c19] flex flex-col gap-4 justify-center items-center">
+                <div class="flex flex-col gap-2 justify-between items-center">
                     <h2 class="font-bold text-lg text-[#ad5c19]">Oponente</h2>
-                    <div class="flex gap-2">
-                        <p class="bg-[#ad5c19] text-white px-3 py-1 rounded-full text-sm font-semibold">Vidas: 
-                            <span>
-                                <div>
-                                    <img class="w-6 h-6" src="/assets/icons/card-casino.svg" alt="">
-                                </div>
-                            </span>
-                        </p>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="flex gap-1 relative pointer-events-none">
+                            <!-- Corazones vacíos (debajo) -->
+                            <div class="flex gap-1">
+                                <img class="w-6 h-6" src="/assets/icons/corazon-vacio-32.png" alt="">
+                                <img class="w-6 h-6" src="/assets/icons/corazon-vacio-32.png" alt="">
+                                <img class="w-6 h-6" src="/assets/icons/corazon-vacio-32.png" alt="">
+                            </div>
+                            <!-- Corazones llenos (encima, superpuestos) -->
+                            <div id="oponente-corazones-llenos" class="flex gap-1 absolute top-0 left-0">
+                                <img class="w-6 h-6 corazon-lleno" src="/assets/icons/corazon-lleno-32.png" alt="">
+                                <img class="w-6 h-6 corazon-lleno" src="/assets/icons/corazon-lleno-32.png" alt="">
+                                <img class="w-6 h-6 corazon-lleno" src="/assets/icons/corazon-lleno-32.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flex items-center justify-center gap-4">
                     <div class="w-16 h-24 sm:w-24 sm:h-32 bg-[#ad5c19] rounded-lg shadow-md flex items-center justify-center">
-                        <span class="text-[#fff1dc] text-6xl">🃟</span>
+                        <span class="text-[#fff1dc] text-5xl sm:text-6xl">🃟</span>
                     </div>
                     <p class="font-bold">x12</p>
                 </div>
             </article>
+
 
             <!-- Área central de juego -->
             <article class="flex-1 bg-[#fff1dc] rounded-xl px-2 py-8 border-2 border-[#ad5c19] flex flex-col justify-center items-center gap-4">
@@ -98,21 +110,36 @@
             </article>
 
             <!-- Área del jugador -->
-            <article class="bg-[#d9b59633] rounded-xl py-2 px-12 border-2 border-[#ad5c19] flex flex-col gap-4 justify-center items-center">
-                <div class="flex flex-col gap-2 justify-between items-center mb-3">
+            <article class="bg-[#d9b59633] rounded-xl py-6 sm:py-2 px-12 border-2 border-[#ad5c19] flex flex-col gap-4 justify-center items-center">
+                <div class="flex flex-col gap-2 justify-between items-center">
                     <h2 class="font-bold text-lg text-[#ad5c19]">(Tú)</h2>
-                    <div class="flex gap-2">
-                        <span class="bg-[#ad5c19] text-white px-3 py-1 rounded-full text-sm font-semibold">Puntos: 8</span>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="flex gap-1 relative pointer-events-none">
+                            <!-- Corazones vacíos (debajo) -->
+                            <div class="flex gap-1">
+                                <img class="w-6 h-6" src="/assets/icons/corazon-vacio-32.png" alt="">
+                                <img class="w-6 h-6" src="/assets/icons/corazon-vacio-32.png" alt="">
+                                <img class="w-6 h-6" src="/assets/icons/corazon-vacio-32.png" alt="">
+                            </div>
+                            <!-- Corazones llenos (encima, superpuestos) -->
+                            <div id="jugador-corazones-llenos" class="flex gap-1 absolute top-0 left-0">
+                                <img class="w-6 h-6 corazon-lleno" src="/assets/icons/corazon-lleno-32.png" alt="">
+                                <img class="w-6 h-6 corazon-lleno" src="/assets/icons/corazon-lleno-32.png" alt="">
+                                <img class="w-6 h-6 corazon-lleno" src="/assets/icons/corazon-lleno-32.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="flex items-center justify-center gap-4">
                     <div class="w-16 h-24 sm:w-24 sm:h-32 bg-[#ad5c19] rounded-lg shadow-md flex items-center justify-center">
-                        <span class="text-[#fff1dc] text-6xl">🃟</span>
+                        <span class="text-[#fff1dc] text-5xl sm:text-6xl">🃟</span>
                     </div>
                     <p class="font-bold">x12</p>
                 </div>
             </article>
+
+
         </section>
 
         <!-- Botones de acción -->
@@ -133,5 +160,6 @@
     <footer class="bg-linear-to-t from-[#d9b596] via-[#fff1dc] to-[#fff1dc] px-8 py-4 border-[#d9b596] border-t-1 font-[Inter] text-[#323232] text-center tracking-wide">
         <p class="text-sm">La Guerra Española - Juego de cartas tradicional</p>
     </footer>
+
 </body>
 </html>
