@@ -6,7 +6,7 @@
     <title>Tablero - La Guerra Española</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#fff1dc] font-[Inter] min-h-screen flex flex-col">
+<body class="bg-[#fff1dc] font-[Inter] flex flex-col">
     
 
     <!-- Barra de navegación -->
@@ -21,19 +21,19 @@
                             <span class="font-medium text-sm sm:text-base">Inicio</span>
                         </a>
                     </li>
-                    <li class="" hidden>
+                    <li class="hidden">
                         <a class="flex flex-row items-center gap-1 sm:gap-2" href="/perfil">
                             <img class="w-5 sm:w-6 h-5 sm:h-6" src="/assets/icons/profile.svg" alt="Perfil Icon">
                             <span class="font-medium text-sm sm:text-base">Perfil</span>
                         </a>
                     </li>
-                    <li class="" hidden>
+                    <li class="hidden">
                         <a class="flex flex-row items-center gap-1 sm:gap-2" href="/tablero">
                             <img class="w-4 sm:w-5 h-4 sm:h-5" src="/assets/icons/card-casino.svg" alt="Icono de tablero">
                             <span class="font-medium text-sm sm:text-base">Tablero</span>
                         </a>
                     </li>
-                    <li class="" hidden>
+                    <li class="hidden">
                         <a class="flex flex-row items-center gap-1 sm:gap-2" href="/logout">
                             <img class="w-5 sm:w-6 h-5 sm:h-6" src="/assets/icons/sign-out.svg" alt="Icono de salida">
                             <span class="font-medium text-sm sm:text-base">Salir</span>
@@ -45,7 +45,7 @@
     </header>
 
     <!-- Tablero de juego -->
-    <main class="flex flex-col px-12 pt-12 pb-4 gap-4 sm:gap-10">
+    <main class="flex flex-col px-12 pt-16 pb-12 gap-4 sm:gap-10">
 
         <section class="flex flex-col md:flex-row gap-8">
 
@@ -157,8 +157,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-linear-to-t from-[#d9b596] via-[#fff1dc] to-[#fff1dc] px-8 py-4 border-[#d9b596] border-t-1 font-[Inter] text-[#323232] text-center tracking-wide">
-        <p class="text-sm">La Guerra Española - Juego de cartas tradicional</p>
+    <footer class="bg-linear-to-t from-[#d9b596] via-[#fff1dc] to-[#fff1dc] px-8 py-6 border-[#d9b596] border-t-1 font-[Inter] text-[#323232] text-center tracking-wide">
+        <p class="font-semibold mb-2">Un juego de cartas a lo tradicional</p>
     </footer>
 
 </body>

@@ -6,7 +6,7 @@
     <title>Registro de Usuario</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#fff1dc] min-h-screen flex items-center justify-center">
+<body class="bg-[#fff1dc] py-8 flex items-center justify-center">
 
     <div class="bg-white shadow-lg min-w-full sm:min-w-auto min-h-[100vh] sm:min-h-auto py-6 px-16 sm:px-8 sm:py-6 md:px-10 md:py-6 border-0 sm:border-1 sm:border-[#ad5c19] rounded-none sm:rounded-3xl py-6">
 

@@ -153,7 +153,6 @@
 
     <footer class="bg-linear-to-t from-[#d9b596] via-[#fff1dc] to-[#fff1dc] px-8 py-6 border-[#d9b596] border-t-1 font-[Inter] text-[#323232] text-center tracking-wide">
         <p class="font-semibold mb-2">Un juego de cartas a lo tradicional</p>
-        <p class="text-sm text-gray-600">2026 La Guerra Española - Casi ningún derecho reservado</p>
     </footer>
 </body>
 </html>
